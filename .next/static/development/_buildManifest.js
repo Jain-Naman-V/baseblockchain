@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = (function(a,b,c,d){return {__rewrites:{afterFiles:[{has:a,source:b,destination:b},{has:a,source:c,destination:c},{has:a,source:d,destination:d}],beforeFiles:[],fallback:[]},sortedPages:["\u002F_app"]}}(void 0,"\u002Fdashboard","\u002Frecords","\u002Fprofile"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

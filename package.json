@@ -1,0 +1,35 @@
+{
+  "name": "medilocker",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:contracts && npm run install:backend && npm run install:frontend",
+    "install:contracts": "cd packages/contracts && npm install",
+    "install:backend": "cd packages/backend && npm install",
+    "install:frontend": "cd packages/frontend && npm install",
+    "dev:backend": "cd packages/backend && npm run dev",
+    "dev:frontend": "cd packages/frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "demo": "cross-env PORT=3002 next dev",
+    "build": "npm run build:contracts && npm run build:backend && npm run build:frontend",
+    "build:contracts": "cd packages/contracts && npm run compile",
+    "build:backend": "cd packages/backend && npm run build",
+    "build:frontend": "cd packages/frontend && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
+    "next": "^13.5.6",
+    "node-cron": "^4.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.4",
+    "typescript": "5.8.3"
+  }
+}
