@@ -4,7 +4,9 @@ Medilocker is a secure, decentralized platform for storing and sharing medical r
 ## Video
 
 
-https://github.com/user-attachments/assets/296bde51-a703-40f4-822b-c241f1290e7f
+
+https://github.com/user-attachments/assets/3497d829-c9b2-41ed-b9b7-ce148b1112fe
+
 
 
 ## Features
